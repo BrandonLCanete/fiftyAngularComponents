@@ -1,0 +1,18 @@
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Name
+        <input type="text" id="name" placeholder="Enter your name" [(ngModel)]="name" name="name" required/>
+        </label>
+        &nbsp;
+        <label for="level">Year Level
+        <input type="text" id="level" placeholder="Enter your year level" [(ngModel)]="level" name="level" required/>
+        </label>
+        &nbsp;
+        <label for="address">Address
+        <input type="text" id="address" placeholder="Enter your address" [(ngModel)]="address" name="address" required/>
+        </label>
+        &nbsp;
+        <input type="submit">
+        <h1>{{printAll}}</h1>
+    </form>
+</div>
