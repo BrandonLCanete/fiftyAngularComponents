@@ -1,0 +1,10 @@
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <label for="birthyear">Birth Year
+        <input type="number" name="birthyear" id="birthyear" placeholder="Enter your birth year" [(ngModel)]="this.userageModel.birthyear" required/>
+        </label>
+        &nbsp;
+        <input type="submit">
+        <h1>{{this.userageModel.print_age}}</h1>
+    </form>
+</div>
