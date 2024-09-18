@@ -1,0 +1,24 @@
+<div>
+    <label for="numberOne">Number One
+        <input type="number" id="numberOne" placeholder="Enter your number one" [(ngModel)]="this.calculatorModel.one" required/>
+    </label>
+    &nbsp;
+    <label for="numberTwo">Number Two
+        <input type="number" id="numberTwo" placeholder="Enter your number two" [(ngModel)]="this.calculatorModel.two" required />
+    </label>
+    <br>
+    <br>
+    <br>
+    <label for="result">Result:
+        <h1>{{this.calculatorModel.result}}</h1>
+    </label>
+    <br>
+    <br>
+    <button type="button" (click)="Add()">ADDITION</button>
+    &nbsp;
+    <button type="button" (click)="Minus()">SUBSTRACTION</button>
+    &nbsp;
+    <button type="button" (click)="Multiply()">MULTIPLICATION</button>
+    &nbsp;
+    <button type="button" (click)="Divide()">DIVISION</button>
+</div>
