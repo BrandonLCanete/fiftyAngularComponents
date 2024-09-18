@@ -1,0 +1,10 @@
+<div>
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Name
+        <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Enter your name" required/>
+        </label>
+        &nbsp;
+        <input type="submit" value="Submit">
+        <h1>{{printGreeting}}</h1>
+    </form>
+</div>
