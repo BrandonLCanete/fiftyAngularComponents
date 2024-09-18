@@ -9,11 +9,13 @@ import { DisplayhelloworldComponent } from './components/displayhelloworld/displ
 import { ShowhellobuttonComponent } from './components/showhellobutton/showhellobutton.component';
 import { FormsModule } from '@angular/forms';
 import { DisplaynameComponent } from './components/displayname/displayname.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
     {path: 'showhellobutton', component: ShowhellobuttonComponent},
-    {path: 'displayname', component: DisplaynameComponent}
+    {path: 'displayname', component: DisplaynameComponent},
+    {path: 'counter', component: CounterComponent},
 ];
 @NgModule({
     imports: [
@@ -27,6 +29,7 @@ const routes: Routes = [
         AppComponent,
         ShowhellobuttonComponent,
         DisplaynameComponent,
+        CounterComponent,
     ],
     providers: [
         provideAnimationsAsync(),
