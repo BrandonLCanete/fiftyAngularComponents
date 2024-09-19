@@ -14,6 +14,7 @@ import { SimpleformComponent } from './components/simpleform/simpleform.componen
 import { UserageComponent } from './components/userage/userage.component';
 import { UsergreetingComponent } from './components/usergreeting/usergreeting.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { TextlengthComponent } from './components/textlength/textlength.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
     {path: 'userage', component: UserageComponent},
     {path: 'usergreeting', component: UsergreetingComponent},
     {path: 'calculator', component: CalculatorComponent},
+    {path: 'textlength', component: TextlengthComponent},
 ];
 @NgModule({
     imports: [
@@ -42,6 +44,7 @@ const routes: Routes = [
         UserageComponent,
         UsergreetingComponent,
         CalculatorComponent,
+        TextlengthComponent,
     ],
     providers: [
         provideAnimationsAsync(),
