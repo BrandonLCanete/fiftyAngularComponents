@@ -1,0 +1,18 @@
+<div>
+    <label for="degree">Enter number</label>
+    <input type="number" id="degree" placeholder="Enter number to convert it" [(ngModel)]="degree">
+    <br>
+    <br>
+    <input type="radio"  [(ngModel)]="conversion" value="celsius" />Celsius To Fahrenheit
+    &nbsp;
+    <input type="radio"  [(ngModel)]="conversion" value="fahrenheit" />Fahrenheit To Celcius
+    <br>
+    <br>
+    <button type="button" (click)="Convert()">Convert</button>
+    <h1 *ngIf="conversion === 'celsius'">
+         {{result}}
+    </h1>
+    <h1 *ngIf="conversion === 'fahrenheit'">
+        {{result}}
+    </h1>
+</div>
