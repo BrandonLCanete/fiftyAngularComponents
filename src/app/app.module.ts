@@ -24,6 +24,7 @@ import { MultiplicationtableComponent } from './components/multiplicationtable/m
 import { SimpleloginComponent } from './components/simplelogin/simplelogin.component';
 import { FahrenheittocelsiusComponent } from './components/fahrenheittocelsius/fahrenheittocelsius.component';
 import { BookmarklistComponent } from './components/bookmarklist/bookmarklist.component';
+import { CharactercounterComponent } from './components/charactercounter/charactercounter.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -44,6 +45,7 @@ const routes: Routes = [
     {path: 'simplelogin', component: SimpleloginComponent},
     {path: 'fahrenheittocelsius', component: FahrenheittocelsiusComponent},
     {path: 'bookmarklist', component: BookmarklistComponent},
+    {path: 'charactercounter', component: CharactercounterComponent},
 ];
 @NgModule({
     imports: [
@@ -72,6 +74,7 @@ const routes: Routes = [
         SimpleloginComponent,
         FahrenheittocelsiusComponent,
         BookmarklistComponent,
+        CharactercounterComponent,
     ],
     providers: [
         provideAnimationsAsync(),
