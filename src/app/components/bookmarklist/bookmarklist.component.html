@@ -1,0 +1,7 @@
+<div>
+    <label for="url">Enter a URL :</label>
+    <input type="text" id="url" placeholder="Input a URL eg.(https://www.google.com/)" [(ngModel)]="link">
+    <button type="button" (click)="Link()">Display URL</button>
+    <br>
+    <h1>Your Link : <a [href]="result" target="_blank">{{result}}</a></h1>
+</div>
