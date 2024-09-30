@@ -21,6 +21,7 @@ import { WordreverserComponent } from './components/wordreverser/wordreverser.co
 import { ShowdateComponent } from './components/showdate/showdate.component';
 import { ShowusernameComponent } from './components/showusername/showusername.component';
 import { MultiplicationtableComponent } from './components/multiplicationtable/multiplicationtable.component';
+import { SimpleloginComponent } from './components/simplelogin/simplelogin.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
     {path: 'showdate', component: ShowdateComponent},
     {path: 'showusername', component: ShowusernameComponent},
     {path: 'multiplicationtable', component: MultiplicationtableComponent},
+    {path: 'simplelogin', component: SimpleloginComponent},
 ];
 @NgModule({
     imports: [
@@ -63,6 +65,7 @@ const routes: Routes = [
         ShowdateComponent,
         ShowusernameComponent,
         MultiplicationtableComponent,
+        SimpleloginComponent,
     ],
     providers: [
         provideAnimationsAsync(),
