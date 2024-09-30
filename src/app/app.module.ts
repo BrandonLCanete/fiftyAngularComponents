@@ -19,6 +19,7 @@ import { CurrencyconverterComponent } from './components/currencyconverter/curre
 import { EvenoddcheckerComponent } from './components/evenoddchecker/evenoddchecker.component';
 import { WordreverserComponent } from './components/wordreverser/wordreverser.component';
 import { ShowdateComponent } from './components/showdate/showdate.component';
+import { ShowusernameComponent } from './components/showusername/showusername.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -34,6 +35,7 @@ const routes: Routes = [
     {path: 'evenoddchecker', component: EvenoddcheckerComponent},
     {path: 'wordreverser', component: WordreverserComponent},
     {path: 'showdate', component: ShowdateComponent},
+    {path: 'showusername', component: ShowusernameComponent},
 ];
 @NgModule({
     imports: [
@@ -57,6 +59,7 @@ const routes: Routes = [
         EvenoddcheckerComponent,
         WordreverserComponent,
         ShowdateComponent,
+        ShowusernameComponent,
     ],
     providers: [
         provideAnimationsAsync(),
