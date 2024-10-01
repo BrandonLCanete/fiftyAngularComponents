@@ -1,0 +1,20 @@
+<div>
+    <label for="principal">Principal Amount : </label>
+    <input type="number" id="principal" placeholder="Input Principal Amount" [(ngModel)]="this.compoundModel.principal" name="principal">
+    &nbsp;
+    <label for="rate">Rate Interest : </label>
+    <input type="number" id="rate" placeholder="Input rate of interest (%)" [(ngModel)]="this.compoundModel.rate" name="rate">
+    &nbsp;
+    <label for="time">Time : </label>
+    <input type="number" id="time" placeholder="Input time in years" [(ngModel)]="this.compoundModel.time" name="time">
+    <select [(ngModel)]="this.compoundModel.frenquency" name="frenquency">
+        <option value="1">Annually</option>
+        <option value="4">Quarterly</option>
+        <option value="12">Monthly</option>
+        <option value="365">Daily</option>
+    </select>
+
+    <button type="button" (click)="Calculate()">Calculate Compound Interest</button>
+    <h3>{{this.compoundModel.Compound_Result}}</h3>
+    <h3>{{this.compoundModel.Amount_Result}}</h3>
+</div>

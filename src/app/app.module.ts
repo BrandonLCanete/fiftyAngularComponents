@@ -39,6 +39,7 @@ import { WordshufflerComponent } from './components/wordshuffler/wordshuffler.co
 import { BmisolverComponent } from './components/bmisolver/bmisolver.component';
 import { UsernamevalidatorComponent } from './components/usernamevalidator/usernamevalidator.component';
 import { InterestcalculatorComponent } from './components/interestcalculator/interestcalculator.component';
+import { CompoundinterestcalculatorComponent } from './components/compoundinterestcalculator/compoundinterestcalculator.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -74,6 +75,7 @@ const routes: Routes = [
     {path: 'bmisolver', component: BmisolverComponent},
     {path: 'usernamevalidator', component: UsernamevalidatorComponent},
     {path: 'interestcalculator', component: InterestcalculatorComponent},
+    {path: 'compoundinterestcalculator', component: CompoundinterestcalculatorComponent},
 ];
 @NgModule({
     imports: [
@@ -117,6 +119,7 @@ const routes: Routes = [
         BmisolverComponent,
         UsernamevalidatorComponent,
         InterestcalculatorComponent,
+        CompoundinterestcalculatorComponent,
     ],
     providers: [
         provideAnimationsAsync(),
