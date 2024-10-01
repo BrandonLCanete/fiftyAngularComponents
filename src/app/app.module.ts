@@ -40,6 +40,7 @@ import { BmisolverComponent } from './components/bmisolver/bmisolver.component';
 import { UsernamevalidatorComponent } from './components/usernamevalidator/usernamevalidator.component';
 import { InterestcalculatorComponent } from './components/interestcalculator/interestcalculator.component';
 import { CompoundinterestcalculatorComponent } from './components/compoundinterestcalculator/compoundinterestcalculator.component';
+import { FibonaccigeneratorComponent } from './components/fibonaccigenerator/fibonaccigenerator.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -76,6 +77,7 @@ const routes: Routes = [
     {path: 'usernamevalidator', component: UsernamevalidatorComponent},
     {path: 'interestcalculator', component: InterestcalculatorComponent},
     {path: 'compoundinterestcalculator', component: CompoundinterestcalculatorComponent},
+    {path: 'fibonaccigenerator', component: FibonaccigeneratorComponent},
 ];
 @NgModule({
     imports: [
@@ -120,6 +122,7 @@ const routes: Routes = [
         UsernamevalidatorComponent,
         InterestcalculatorComponent,
         CompoundinterestcalculatorComponent,
+        FibonaccigeneratorComponent,
     ],
     providers: [
         provideAnimationsAsync(),
