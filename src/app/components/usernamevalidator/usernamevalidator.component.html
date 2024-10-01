@@ -1,0 +1,8 @@
+<div>
+    <form (ngSubmit)="Validate()">
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="Enter your username" [(ngModel)]="username" name="username">
+        <input type="submit" value="Validate">
+        <h1>{{result}}</h1>
+    </form>
+</div>
