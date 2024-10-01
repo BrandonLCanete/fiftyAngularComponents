@@ -1,0 +1,15 @@
+<div>
+    <form (ngSubmit)="Submit()">
+        <label for="height">Height (meters) </label>
+        <br>
+        <input type="number" id="height" placeholder="Enter height in centimeters" [(ngModel)]="this.bmiModel.height" name="height">
+        <br>
+        <label for="weight">Weight (kg) </label>
+        <br>
+        <input type="number" id="weight" placeholder="Enter weight in kilograms" [(ngModel)]="this.bmiModel.weight" name="weight">
+        <br>
+        <input type="submit" value="Calculate BMI">
+        <h1>{{this.bmiModel.result}}</h1>
+        <h3>{{this.bmiModel.category}}</h3>
+    </form>
+</div>

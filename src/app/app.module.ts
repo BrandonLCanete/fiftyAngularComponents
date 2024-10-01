@@ -36,6 +36,7 @@ import { RandomnumbergeneratorComponent } from './components/randomnumbergenerat
 import { MultiplicationcheckerComponent } from './components/multiplicationchecker/multiplicationchecker.component';
 import { UppercaseconverterComponent } from './components/uppercaseconverter/uppercaseconverter.component';
 import { WordshufflerComponent } from './components/wordshuffler/wordshuffler.component';
+import { BmisolverComponent } from './components/bmisolver/bmisolver.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -68,6 +69,7 @@ const routes: Routes = [
     {path: 'multiplicationchecker', component: MultiplicationcheckerComponent},
     {path: 'uppercaseconverter', component: UppercaseconverterComponent},
     {path: 'wordshuffler', component: WordshufflerComponent},
+    {path: 'bmisolver', component: BmisolverComponent},
 ];
 @NgModule({
     imports: [
@@ -108,6 +110,7 @@ const routes: Routes = [
         MultiplicationcheckerComponent,
         UppercaseconverterComponent,
         WordshufflerComponent,
+        BmisolverComponent,
     ],
     providers: [
         provideAnimationsAsync(),
