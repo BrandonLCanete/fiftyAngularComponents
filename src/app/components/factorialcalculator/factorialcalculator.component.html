@@ -1,0 +1,6 @@
+<div>
+    <label for="factorial">Input a Number : </label>
+    <input type="number" id="factorial" placeholder="Input number to get the factorial" [(ngModel)]="factor">
+    <button type="button" (click)="factorial(factor)">Factorial</button>
+    <h1>{{result}}</h1>
+</div>
