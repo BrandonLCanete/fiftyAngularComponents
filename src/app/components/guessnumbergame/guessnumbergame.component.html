@@ -1,0 +1,23 @@
+<div>
+    <label for="guess">Guess the number 1 - 1000</label>
+    <br>
+    <br>
+    <input type="number" id="guess" placeholder="Input Number" [(ngModel)]="this.number">
+    <br>
+    <br>
+    <button type="button" (click)="Verify()">Submit</button>
+    <br>
+    <h1 *ngIf="this.deviation < 0">
+        Your Guess is Higher.
+    </h1>
+    <h1 *ngIf="this.deviation > 0">
+        Your Guess is Lower.
+    </h1>
+    <h1 *ngIf="this.deviation === 0">
+        Congratulations! You guess the number
+        <button type="button" (click)="Restart()">Play Again</button>
+    </h1>
+    <p>
+        No of Guesses: {{this.noOfTries}}
+    </p>
+</div>
