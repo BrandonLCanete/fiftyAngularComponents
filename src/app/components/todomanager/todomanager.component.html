@@ -1,0 +1,11 @@
+<div>
+    <label for="to-do-manager">Task :</label>
+    <input type="text" id="to-do-manager" placeholder="Enter a new task" [(ngModel)]="manager">
+    <button type="button" (click)="Add()">Add Task</button>
+    <ul>
+        <li *ngFor="let manage of managerList; let count = index">
+            {{manage}}
+            <button type="button" (click)="Remove(count)">Remove Task</button>
+        </li>
+    </ul>
+</div>
