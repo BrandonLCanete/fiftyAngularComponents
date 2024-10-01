@@ -33,6 +33,7 @@ import { TodomanagerComponent } from './components/todomanager/todomanager.compo
 import { GuessnumbergameComponent } from './components/guessnumbergame/guessnumbergame.component';
 import { WordcounterComponent } from './components/wordcounter/wordcounter.component';
 import { RandomnumbergeneratorComponent } from './components/randomnumbergenerator/randomnumbergenerator.component';
+import { MultiplicationcheckerComponent } from './components/multiplicationchecker/multiplicationchecker.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -62,6 +63,7 @@ const routes: Routes = [
     {path: 'guessnumbergame', component: GuessnumbergameComponent},
     {path: 'wordcounter', component: WordcounterComponent},
     {path: 'randomnumbergenerator', component: RandomnumbergeneratorComponent},
+    {path: 'multiplicationchecker', component: MultiplicationcheckerComponent},
 ];
 @NgModule({
     imports: [
@@ -99,6 +101,7 @@ const routes: Routes = [
         GuessnumbergameComponent,
         WordcounterComponent,
         RandomnumbergeneratorComponent,
+        MultiplicationcheckerComponent,
     ],
     providers: [
         provideAnimationsAsync(),
