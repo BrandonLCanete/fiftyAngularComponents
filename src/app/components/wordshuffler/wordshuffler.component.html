@@ -1,0 +1,6 @@
+<div>
+    <label for="word">Words</label>
+    <textarea id="word" cols="35" rows="10" placeholder="Input words to Shuffle" [(ngModel)]="words"></textarea>
+    <button type="button" (click)="Shuffle(words)">Shuffle</button>
+    <h1>{{result}}</h1>
+</div>
