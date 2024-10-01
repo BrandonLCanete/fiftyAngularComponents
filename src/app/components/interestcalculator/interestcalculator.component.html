@@ -1,0 +1,12 @@
+<div>
+    <label for="principal">Principal Amount :</label>
+    <input type="number" id="principal" placeholder="Input Principal Amount" [(ngModel)]="this.interestModel.principal" name="principal">
+    &nbsp;
+    <label for="rate">Rate Amount :</label>
+    <input type="number" id="rate" placeholder="Input Interest Amount" [(ngModel)]="this.interestModel.rate" name="rate">
+    &nbsp;
+    <label for="time">Time :</label>
+    <input type="number" id="time" placeholder="Input Time in Years" [(ngModel)]="this.interestModel.time" name="time">
+    <button type="button" (click)="Calculate()">Calculate Interest</button>
+    <h1>{{this.interestModel.result}}</h1>
+</div>

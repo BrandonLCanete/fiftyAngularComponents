@@ -38,6 +38,7 @@ import { UppercaseconverterComponent } from './components/uppercaseconverter/upp
 import { WordshufflerComponent } from './components/wordshuffler/wordshuffler.component';
 import { BmisolverComponent } from './components/bmisolver/bmisolver.component';
 import { UsernamevalidatorComponent } from './components/usernamevalidator/usernamevalidator.component';
+import { InterestcalculatorComponent } from './components/interestcalculator/interestcalculator.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -72,6 +73,7 @@ const routes: Routes = [
     {path: 'wordshuffler', component: WordshufflerComponent},
     {path: 'bmisolver', component: BmisolverComponent},
     {path: 'usernamevalidator', component: UsernamevalidatorComponent},
+    {path: 'interestcalculator', component: InterestcalculatorComponent},
 ];
 @NgModule({
     imports: [
@@ -114,6 +116,7 @@ const routes: Routes = [
         WordshufflerComponent,
         BmisolverComponent,
         UsernamevalidatorComponent,
+        InterestcalculatorComponent,
     ],
     providers: [
         provideAnimationsAsync(),
