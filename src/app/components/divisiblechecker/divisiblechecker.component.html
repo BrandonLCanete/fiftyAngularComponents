@@ -1,0 +1,10 @@
+<div>
+    <label for="numOne">Number One : </label>
+    <input type="number" id="numOne" placeholder="Input number one" [(ngModel)]="numberOne">
+    &nbsp;
+    <label for="numTwo">Number Two : </label>
+    <input type="number" id="numTwo" placeholder="Input number two" [(ngModel)]="numberTwo">
+    &nbsp;
+    <button type="button" (click)="Check()">Check Divisibility</button>
+    <h1>{{result}}</h1>
+</div>
