@@ -48,6 +48,7 @@ import { UppercasegreetingComponent } from './components/uppercasegreeting/upper
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
 import { PasswordgeneratorComponent } from './components/passwordgenerator/passwordgenerator.component';
 import { SimplequizgameComponent } from './components/simplequizgame/simplequizgame.component';
+import { SavetextfileComponent } from './components/savetextfile/savetextfile.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -92,6 +93,7 @@ const routes: Routes = [
     {path: 'divisiblechecker', component: DivisiblecheckerComponent},
     {path: 'passwordgenerator', component: PasswordgeneratorComponent},
     {path: 'simplequizgame', component: SimplequizgameComponent},
+    {path: 'savetextfile', component: SavetextfileComponent},
 ];
 @NgModule({
     imports: [
@@ -144,6 +146,7 @@ const routes: Routes = [
         DivisiblecheckerComponent,
         PasswordgeneratorComponent,
         SimplequizgameComponent,
+        SavetextfileComponent,
     ],
     providers: [
         provideAnimationsAsync(),
