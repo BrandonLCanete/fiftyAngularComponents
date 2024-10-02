@@ -47,6 +47,7 @@ import { RandomquotedisplayComponent } from './components/randomquotedisplay/ran
 import { UppercasegreetingComponent } from './components/uppercasegreeting/uppercasegreeting.component';
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
 import { PasswordgeneratorComponent } from './components/passwordgenerator/passwordgenerator.component';
+import { SimplequizgameComponent } from './components/simplequizgame/simplequizgame.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -90,6 +91,7 @@ const routes: Routes = [
     {path: 'uppercasegreeting', component: UppercasegreetingComponent},
     {path: 'divisiblechecker', component: DivisiblecheckerComponent},
     {path: 'passwordgenerator', component: PasswordgeneratorComponent},
+    {path: 'simplequizgame', component: SimplequizgameComponent},
 ];
 @NgModule({
     imports: [
@@ -141,6 +143,7 @@ const routes: Routes = [
         UppercasegreetingComponent,
         DivisiblecheckerComponent,
         PasswordgeneratorComponent,
+        SimplequizgameComponent,
     ],
     providers: [
         provideAnimationsAsync(),

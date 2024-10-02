@@ -1,0 +1,10 @@
+<div>
+    <button type="button" name="button" (click)="Generate()">Generate Question</button>
+    <h3 *ngIf="question_result !== ''">
+        {{question_result}}
+        <label for="answer">Answer</label>
+        <input type="text" id="answer" placeholder="Input Answer" [(ngModel)]="question_answer">
+        <button type="button" (click)="Answer()">Submit</button>
+        <h3>{{remarks}}</h3>
+    </h3>
+</div>
