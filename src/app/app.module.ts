@@ -52,6 +52,7 @@ import { SavetextfileComponent } from './components/savetextfile/savetextfile.co
 import { SavepdffileComponent } from './components/savepdffile/savepdffile.component';
 import { RandomcolorgeneratorComponent } from './components/randomcolorgenerator/randomcolorgenerator.component';
 import { BeatthebossComponent } from './components/beattheboss/beattheboss.component';
+import { TakeaverageoffournumbersComponent } from './components/takeaverageoffournumbers/takeaverageoffournumbers.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -100,6 +101,7 @@ const routes: Routes = [
     {path: 'savepdffile', component: SavepdffileComponent},
     {path: 'randomcolorgenerator', component: RandomcolorgeneratorComponent},
     {path: 'beattheboss', component: BeatthebossComponent},
+    {path: 'takeaverageoffournumbers', component: TakeaverageoffournumbersComponent},
 ];
 @NgModule({
     imports: [
@@ -156,6 +158,7 @@ const routes: Routes = [
         SavepdffileComponent,
         RandomcolorgeneratorComponent,
         BeatthebossComponent,
+        TakeaverageoffournumbersComponent,
     ],
     providers: [
         provideAnimationsAsync(),
