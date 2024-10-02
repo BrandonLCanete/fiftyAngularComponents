@@ -50,6 +50,7 @@ import { PasswordgeneratorComponent } from './components/passwordgenerator/passw
 import { SimplequizgameComponent } from './components/simplequizgame/simplequizgame.component';
 import { SavetextfileComponent } from './components/savetextfile/savetextfile.component';
 import { SavepdffileComponent } from './components/savepdffile/savepdffile.component';
+import { RandomcolorgeneratorComponent } from './components/randomcolorgenerator/randomcolorgenerator.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -96,6 +97,7 @@ const routes: Routes = [
     {path: 'simplequizgame', component: SimplequizgameComponent},
     {path: 'savetextfile', component: SavetextfileComponent},
     {path: 'savepdffile', component: SavepdffileComponent},
+    {path: 'randomcolorgenerator', component: RandomcolorgeneratorComponent},
 ];
 @NgModule({
     imports: [
@@ -150,6 +152,7 @@ const routes: Routes = [
         SimplequizgameComponent,
         SavetextfileComponent,
         SavepdffileComponent,
+        RandomcolorgeneratorComponent,
     ],
     providers: [
         provideAnimationsAsync(),
