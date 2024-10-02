@@ -1,0 +1,12 @@
+<div>
+    <h1>The Boss</h1>
+    <h3>Boss Health : <input type="number" [(ngModel)]="bossHealth" readonly></h3>
+    <h3>Boss Attacks : 1. Rapid Punching (50 damage) 2. Shadow Bomb (70 damage) 3. Heal (Add 50 health)</h3>
+    <h1>You</h1>
+    <h3>Your Health <input type="number" [(ngModel)]="playerHealth" readonly></h3>
+    <h3>Your Attacks : 1. 1000 Sword (60 damage) 2. Sword Smash (90 damage) 3. Heal (Add 100 health)</h3>
+    <h3 *ngIf="turn == 1">Your Choice : <input type="number" placeholder="Input your choice" [(ngModel)]="choice"><button type="button" [disabled]="isClicked" (click)="Attack()">Attack</button></h3>
+    <button type="button" [disabled]="isbutton" (click)="Turn()">Turn</button>
+    <h3>{{message}}</h3>
+    <button type="button" (click)="Reset()" *ngIf="playerHealth < 0 || bossHealth < 0">Reset</button>
+</div>
