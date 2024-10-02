@@ -55,6 +55,7 @@ import { BeatthebossComponent } from './components/beattheboss/beattheboss.compo
 import { TakeaverageoffournumbersComponent } from './components/takeaverageoffournumbers/takeaverageoffournumbers.component';
 import { AreaofcirclesolverComponent } from './components/areaofcirclesolver/areaofcirclesolver.component';
 import { AreaofspheresolverComponent } from './components/areaofspheresolver/areaofspheresolver.component';
+import { AnimelistadderComponent } from './components/animelistadder/animelistadder.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -106,6 +107,7 @@ const routes: Routes = [
     {path: 'takeaverageoffournumbers', component: TakeaverageoffournumbersComponent},
     {path: 'areaofcirclesolver', component: AreaofcirclesolverComponent},
     {path: 'areaofspheresolver', component: AreaofspheresolverComponent},
+    {path: 'animelistadder', component: AnimelistadderComponent},
 ];
 @NgModule({
     imports: [
@@ -165,6 +167,7 @@ const routes: Routes = [
         TakeaverageoffournumbersComponent,
         AreaofcirclesolverComponent,
         AreaofspheresolverComponent,
+        AnimelistadderComponent,
     ],
     providers: [
         provideAnimationsAsync(),

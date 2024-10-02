@@ -1,0 +1,11 @@
+<div>
+    <label for="anime">Anime : </label>
+    <input type="text" id="anime" placeholder="Input anime name" [(ngModel)]="anime">
+    <button type="button" (click)="addAnime()">Add Anime</button>
+    <ul>
+        <li *ngFor="let animelist of animeList; let anime_index = index">
+            {{animelist}}
+            <button type="button" (click)="Remove(anime_index)">Remove</button>
+        </li>
+    </ul>
+</div>
