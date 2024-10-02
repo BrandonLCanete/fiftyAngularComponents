@@ -1,0 +1,6 @@
+<div>
+    <label for="word">Text : </label>
+    <textarea  id="word" cols="30" rows="10" placeholder="Input text you want to save" [(ngModel)]="text"></textarea>
+    <button type="button" (click)="saveFile()">Save to PDF File</button>
+    <h1>{{result}}</h1>
+</div>
