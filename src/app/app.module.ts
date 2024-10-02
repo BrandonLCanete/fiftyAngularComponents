@@ -46,6 +46,7 @@ import { CurrencyformatterComponent } from './components/currencyformatter/curre
 import { RandomquotedisplayComponent } from './components/randomquotedisplay/randomquotedisplay.component';
 import { UppercasegreetingComponent } from './components/uppercasegreeting/uppercasegreeting.component';
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
+import { PasswordgeneratorComponent } from './components/passwordgenerator/passwordgenerator.component';
 
 const routes: Routes = [
     {path: ' ', component: DisplayhelloworldComponent},
@@ -88,6 +89,7 @@ const routes: Routes = [
     {path: 'randomquotedisplay', component: RandomquotedisplayComponent},
     {path: 'uppercasegreeting', component: UppercasegreetingComponent},
     {path: 'divisiblechecker', component: DivisiblecheckerComponent},
+    {path: 'passwordgenerator', component: PasswordgeneratorComponent},
 ];
 @NgModule({
     imports: [
@@ -138,6 +140,7 @@ const routes: Routes = [
         RandomquotedisplayComponent,
         UppercasegreetingComponent,
         DivisiblecheckerComponent,
+        PasswordgeneratorComponent,
     ],
     providers: [
         provideAnimationsAsync(),
